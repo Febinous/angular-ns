@@ -8,7 +8,7 @@ import { logiComponent } from './logi/logi.component';
 import { ServersComponent } from './servers/servers.component';
 import { redcomponent } from './redwar/red.component';
 import { GreenComponent } from './green/green.component';
-
+import { assn } from './assone/assn.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,8 +17,9 @@ import { GreenComponent } from './green/green.component';
     ServersComponent,
     redcomponent,
     GreenComponent,
+    assn,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

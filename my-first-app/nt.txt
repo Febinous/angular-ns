@@ -21,3 +21,17 @@ add selector to any html
 -- cmd
 ng generate component servers
 ng g c severs
+
+
+string interpolation -- {{}}
+
+property -- [disabled]=""
+
+event binding -- (click)=""
+
+
+$event --  reserved keyword / gives data that is produced when an event occurs
+
+
+two-way-binding -- ngModel directive 
+                  -- import {FormsModule} from '@angular/forms';
