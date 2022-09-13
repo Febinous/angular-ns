@@ -1,4 +1,8 @@
-<p>Server Component</p>
-<p>{{ "Server" }}Server ID is {{ serverId }} is {{ getServerStatus() }}</p>
+<p
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ online: serverStatus === 'online' }"
+>
+  {{ "Server" }}Server ID is {{ serverId }} is {{ getServerStatus() }}
+</p>
 
 <!-- <logi-custo></logi-custo> -->

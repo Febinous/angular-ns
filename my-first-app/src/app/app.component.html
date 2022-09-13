@@ -1,18 +1,39 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h1>Iam the app</h1>
-      <hr />
-      <!-- <app-server></app-server> -->
-      <!-- <app-servers></app-servers>1 -->
-      <!-- <div app-servers></div> -->
-      <!-- <div class="app-servers"></div> -->
-      <app-servers></app-servers>
-      <app-server></app-server>
-      <red-cop></red-cop>
-      <green-cop></green-cop>
-      <!-- <h1>{{ name }}</h1> -->
-      <assn></assn>
+      <!-- <button class="btn btn-primary" (click)="showSecret = !showSecret">
+        Display Details
+      </button> -->
+      <button class="btn btn-primary" (click)="onToggleDetails()">
+        Display Details
+      </button>
+      <p *ngIf="showSecret">Secret Password</p>
+      <div
+        *ngFor="let logItem of log"
+        [ngStyle]="{ backgroundColor: logItem >= 5 ? 'blue' : 'transparent' }"
+        [ngClass]="{ 'white-text': logItem >= 5 }"
+      >
+        {{ logItem }}
+      </div>
     </div>
   </div>
 </div>
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Iam the app</h1>
+      <hr /> -->
+<!-- <app-server></app-server> -->
+<!-- <app-servers></app-servers>1 -->
+<!-- <div app-servers></div> -->
+<!-- <div class="app-servers"></div> -->
+<!-- <app-servers></app-servers>
+      <app-server></app-server>
+      <red-cop></red-cop>
+      <green-cop></green-cop>
+      <h1>{{ name }}</h1> -->
+<!-- <assn></assn>
+    </div>
+  </div>
+</div> -->

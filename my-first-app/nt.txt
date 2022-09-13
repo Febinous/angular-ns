@@ -35,3 +35,9 @@ $event --  reserved keyword / gives data that is produced when an event occurs
 
 two-way-binding -- ngModel directive 
                   -- import {FormsModule} from '@angular/forms';
+
+
+directives -- *ngIf as a property for an html element
+
+    * -- stuctural directive
+    others -- attribute directives
