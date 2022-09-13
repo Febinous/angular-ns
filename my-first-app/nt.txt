@@ -1,6 +1,14 @@
+npm install @angular/cli@latest
+
+ng new app --no-strict
+
+
 angular.json bootstrap
 
+
 npm install --save bootstrap@3
+
+    angular.json> styles[]
 
 new folder with html and .ts with component
 -import { Component } from '@angular/core';
@@ -39,5 +47,8 @@ two-way-binding -- ngModel directive
 
 directives -- *ngIf as a property for an html element
 
-    * -- stuctural directive
+    * -- stuctural directive(ngIf)
     others -- attribute directives
+
+    -- [ngStyle/ngClass]
+      -- used as a property binding
