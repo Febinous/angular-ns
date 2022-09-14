@@ -1,0 +1,14 @@
+--*ngFOr let of[]
+
+    -- custom property binding
+        --name of property will be a member of component class
+        -- tomake the selector property accessible for parent component
+            -- give data to child
+            -- add a decorator @Input to the member 
+            -- alias for the member can be set inside the Input decorator
+        -- to give data to a parent element 
+            -- make a member with new EventEmitter from @angular/core
+            -- make events on selector (custom defined) and give function from parent class
+            -- create EventEmitter object with recieving data ()- add for constructor
+            -- add @Output() to be accessible or emitable
+            -- .emit function for emitting on events
