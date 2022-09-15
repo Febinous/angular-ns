@@ -1,0 +1,5 @@
+<app-emit-child (updateEvent)="updateName($event)"></app-emit-child>
+<ul *ngFor="let a of name; let i = index">
+  <li>{{ a.name }}</li>
+  <button (click)="delete(i)">Delete</button>
+</ul>

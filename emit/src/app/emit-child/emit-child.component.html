@@ -1,0 +1,6 @@
+<div>
+  <label>Enter Your Name</label><br />
+  <input type="text" [(ngModel)]="fname" />
+  <button (click)="nameUpdate()">Update</button>
+  <p [(ngModel)]="war" [ngStyle]="{ color: 'red' }">{{ war }}</p>
+</div>

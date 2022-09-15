@@ -1,0 +1,11 @@
+--create custom events
+    -- on parent 
+    -- pass in the events to a function
+    -- data may be an object
+    -- on child
+    -- create properties
+    -- make property to events
+        -- = new EventEmitter<{}>()
+            -- its a generic datatype
+        --inside function
+        --memberName.emit(data) - to emit the $event data @Output()
