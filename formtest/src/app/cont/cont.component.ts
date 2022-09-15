@@ -12,9 +12,8 @@ export class ContComponent implements OnInit {
   //   new points('Two', 'Point Two'),
   // ];
 
-  @Input('data') data: { dataOne: string; dataTwo: string };
-  // data = [{ dataOne: 'Its Data One', dataTwo: 'Its data Two' }];
-
+  @Input() cData: { dataOne: string; dataTwo: string };
+  // cData = { dataOne: 'hello', dataTwo: 'hello2' };
   constructor() {}
 
   ngOnInit(): void {}
