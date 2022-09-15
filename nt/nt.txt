@@ -1,3 +1,6 @@
+1st 
+
+
 npm install @angular/cli@latest
 
 ng new app --no-strict
