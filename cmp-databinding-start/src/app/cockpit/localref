@@ -2,3 +2,5 @@
     --on function arument 
         -- nameInpute:HTMLInputElement
             --nameInput.value
+    --using @ViewChild('Localvar')var:ElementRef
+    -- Localvar.nativeElement.value
