@@ -1,0 +1,4 @@
+#<name>-- reference to the element
+    --on function arument 
+        -- nameInpute:HTMLInputElement
+            --nameInput.value
