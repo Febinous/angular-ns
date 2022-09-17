@@ -13,11 +13,13 @@ import {
 })
 export class ServerElementComponent implements OnInit, OnChanges {
   @Input("srvElement") element: { type: string; name: string; content: string };
+  @Input() name: string;
   constructor() {
     console.log("Constructor is init");
   }
   ngOnChanges(changes: SimpleChanges) {
     console.log("On changes");
+    console.log(changes);
   }
   ngOnInit(): void {
     console.log("ng On it is called");
