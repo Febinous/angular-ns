@@ -1,0 +1,4 @@
+-- view is the current template
+    --content is parent template
+    --@ViewChild()
+    --@ContentChild
