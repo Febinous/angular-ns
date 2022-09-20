@@ -1,2 +1,20 @@
 --attribute directives
 --structural directives
+
+-- make a directive 
+    -- import directive
+    -- use @Directive({}) directive before class
+
+    import { Directive, ElementRef, OnInit } from "@angular/core";
+@Directive({
+  selector: "[appBasicHighlight]",
+})
+export class BasicHighlightDirective implements OnInit {
+  constructor(private elementRef: ElementRef) {}
+  ngOnInit(): void {
+    this.elementRef.nativeElement.style.backgroundColor = "Red";
+  }
+}
+
+    -- inside constructor give aurgument of a private ElementRef
+    --now add directive class to app.module.ts > inside declarations
