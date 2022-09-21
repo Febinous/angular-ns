@@ -1,0 +1,4 @@
+--inside a custom directive 
+    -- create custom listener 
+        -- decorator 
+            @HostListener('EventName')Function(EventData:event ){}
