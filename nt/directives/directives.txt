@@ -17,4 +17,7 @@ export class BasicHighlightDirective implements OnInit {
 }
 
     -- inside constructor give aurgument of a private ElementRef
-    --now add directive class to app.module.ts > inside declarations
+--now add directive class to app.module.ts > inside declarations
+    
+
+--(*) Angular transforms the asterisk in front of a structural directive

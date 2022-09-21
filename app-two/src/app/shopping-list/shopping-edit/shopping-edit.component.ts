@@ -14,11 +14,12 @@ import { Ingredient } from 'src/app/shared/ingredient.model';
   styleUrls: ['./shopping-edit.component.css'],
 })
 export class ShoppingEditComponent implements OnInit {
-  constructor() {}
   @ViewChild('nameInput', { static: false }) nameInputRef: ElementRef;
   @ViewChild('amountInput', { static: false }) amountInputRef: ElementRef;
 
   @Output() ingredientData = new EventEmitter<Ingredient>();
+  constructor() {}
+
   ngOnInit(): void {}
   onAddItem() {
     const ingName = this.nameInputRef.nativeElement.value;

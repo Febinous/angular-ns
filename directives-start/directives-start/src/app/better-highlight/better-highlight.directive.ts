@@ -1,18 +1,19 @@
 import {
   Directive,
-  ElementRef,
-  HostBinding,
   Renderer2,
+  OnInit,
+  ElementRef,
   HostListener,
+  HostBinding,
   Input,
 } from "@angular/core";
 
 @Directive({
   selector: "[appBetterHighlight]",
 })
-export class BetterHighlightDirective {
+export class BetterHighlightDirective implements OnInit {
   @Input() defaultColor: string = "transparent";
-  @Input() highlightColor: string = "blue";
+  @Input("appBetterHighlight") highlightColor: string = "blue";
   @HostBinding("style.backgroundColor") backgroundColor: string;
   constructor(private elRef: ElementRef, private renderer: Renderer2) {}
   ngOnInit() {
@@ -40,9 +41,5 @@ export class BetterHighlightDirective {
   }
 }
 function parseHostBinding(arg0: string) {
-  throw new Error("Function not implemented.");
-}
-
-function HostBinding(arg0: string) {
   throw new Error("Function not implemented.");
 }
