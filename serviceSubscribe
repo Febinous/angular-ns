@@ -1,0 +1,3 @@
+-- pass data from one component to another 
+    -- create a emitter and to access data from that service emitter 
+        -- subscribe to that emitter 

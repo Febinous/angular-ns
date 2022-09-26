@@ -1,0 +1,8 @@
+--Hierarchical injector
+    -- constructor(private service:service){}
+    -- add the provide service
+
+    --remember about Hierarchical levels always 
+
+
+
