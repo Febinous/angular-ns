@@ -1,0 +1,15 @@
+-- const appRoutes:Routes=[{path:'users'}] imports: [BrowserModule, FormsModule,
+RouterModule.forRoot(appRoutes)],
+<li role="presentation" routerLinkActive="active">
+  <a routerLink="/users">Users</a>
+</li>
+<li
+  role="presentation"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: true }"
+>
+  <a routerLink="/">Home</a>
+</li>
+
+-- programmatically routing constructor(private router: Router) {} ngOnInit() {}
+onLoadServers() { //statments this.router.navigate(["/servers"]); }
