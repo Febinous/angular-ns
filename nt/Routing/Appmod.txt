@@ -1,0 +1,19 @@
+-- register routes in an array as js Objects
+    -- const appRoutes:Routes=[{
+        path:'users',
+        component:UsersComponent
+    },
+    {path:'',component:HomeComponent},
+    {path:'servers',component:ServerComponent}]
+
+--Import Routes,RouterModule from '@angular/router'
+--imports:[RouterModule.forRoot(appRoutes)]
+
+    -- where to render the page
+
+<router-outlet></router-outlet>
+
+-- href="/user"     -   reloads the app 
+
+<a routerLink="/">
+<a [routerLink]="['/users']">
