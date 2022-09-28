@@ -1,0 +1,7 @@
+-- Gives or can specify which style to give to active tab 
+
+routerLinkActive=""
+ 
+ [routerLinkActiveOptions]="{exact:true}"
+
+
