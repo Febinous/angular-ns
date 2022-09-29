@@ -1,0 +1,7 @@
+    #name
+  @ViewChild('name', { static: false }) nameRef: ElementRef;
+
+this.flname = this.nameRef.nativeElement.value;
+
+@ContentChild()
+

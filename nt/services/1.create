@@ -3,4 +3,11 @@
     
     -- create a member on constructor with type as class nativeElement
     -- add it to providers on components
+
+    --- code
+
+        @Component({providers:[service]})
+        
+    constructor(private service:service){}
+
     

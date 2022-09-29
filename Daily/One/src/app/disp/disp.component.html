@@ -1,0 +1,24 @@
+<!-- <div class="">
+  <span>First Name is :{{ data.fname }}</span>
+  <span>Last Name is :{{ data.lname }}</span>
+  <span>Gender is :{{ data.gen }}</span>
+  <span>Date is :{{ data.date }}</span>
+  <span>Address is :{{ data.address }}</span>
+</div> -->
+<div style="height: 10px"></div>
+
+<div>
+  <div style="margin-left: 40%; text-align: center">
+    <div class="card" style="width: 18rem">
+      <div class="card-header">Name: {{ data.fname }} {{ data.lname }}</div>
+      <ul class="list-group list-group-flush">
+        <!-- <li class="list-group-item">Last Name:{{ data.lname }}</li> -->
+        <li class="list-group-item">Gender : {{ data.gen }}</li>
+        <li class="list-group-item">Date : {{ data.date }}</li>
+        <li class="list-group-item">Mode of payment : {{ data.pay }}</li>
+        <li class="list-group-item">Address : {{ data.address }}</li>
+      </ul>
+    </div>
+  </div>
+  <div style="height: 150px">&nbsp;</div>
+</div>

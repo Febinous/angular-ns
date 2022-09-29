@@ -1,0 +1,10 @@
+Import {router} from '@angular/router';
+
+constructor(private router:Router, private route:ActivatedRoute){}
+
+-- route currently activated route and other metainformations
+-- absolute path /server
+functio(){
+    this.router.navigate(['/server']); -- to root domain
+    this.router.navigate(['/server'],{relativeTo:this.route});
+}

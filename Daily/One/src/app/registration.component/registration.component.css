@@ -1,0 +1,13 @@
+.ten {
+  justify-content: center;
+  border-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: whitesmoke;
+}
+.colr {
+  background-image: linear-gradient(to left, #fc00ff, #00dbde);
+  border-radius: 20px;
+  width: 700px;
+  margin: auto;
+}

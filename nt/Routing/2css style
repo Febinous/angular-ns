@@ -2,6 +2,7 @@
 
 routerLinkActive=""
  
+ -- for exact not just a part of the path
  [routerLinkActiveOptions]="{exact:true}"
 
 

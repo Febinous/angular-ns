@@ -1,0 +1,5 @@
+<app-html *ngFor="let acc of accounts; let i = index" [account]="acc" [id]="1"
+  ><app-html></app-html
+></app-html>
+
+-- through looping index every time a new component is created with index

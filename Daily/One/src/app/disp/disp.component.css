@@ -1,0 +1,12 @@
+span {
+  justify-content: center;
+  border-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: whitesmoke;
+}
+.center {
+  justify-content: center;
+  margin-left: 140px;
+  text-align: center;
+}

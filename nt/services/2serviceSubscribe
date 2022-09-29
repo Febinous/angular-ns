@@ -1,0 +1,11 @@
+-- pass data from one component to another 
+    -- create a emitter and to access data from that service emitter 
+        -- subscribe to that emitter 
+
+        -- add eventemitter in a service
+        a=new eventemitter<>()
+
+        -- emit it in the used component
+        a.emit(status)
+        --subscribe it with function in another component
+        a.subscribe((status:string)=>alert('new Status'+status))
