@@ -66,7 +66,11 @@ export class registration {
     localStorage.setItem('date', this.date);
     localStorage.setItem('address', this.address);
     //cookie
-    document.cookie = 'fname=this.fname';
+    document.cookie = 'fname=' + this.fname;
+    document.cookie = 'lname=' + this.lname;
+    document.cookie = 'gender=' + this.gen;
+    document.cookie = 'date=' + this.date;
+    document.cookie = 'address=' + this.address;
   }
   clearData() {
     localStorage.clear();
