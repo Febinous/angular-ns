@@ -1,5 +1,6 @@
 <form (ngSubmit)="onSubmit()" #f="ngForm">
-  <div ngModelGroup="data">
+  <div ngModelGroup="userData" #userData="ngModelGroup">
+    <button (click)="setAll()">Set All</button>
     <label>First Name</label>
     <br />
     <input type="text" name="fname" ngModel required />
@@ -12,6 +13,7 @@
     <span class="help-block" *ngIf="!email.valid && email.touched"
       >Please enter a valid email</span
     >
+    <p *ngIf="!userData.valid && userData.touched">User Data is invalid!</p>
     <br />
     <select [ngModel]="defaultQuestion" name="secret">
       <option value="pet">Your First Pet?</option>
@@ -21,6 +23,29 @@
       <textarea name="questionAnswer" rows="3" [(ngModel)]="answer"> </textarea>
     </div>
     <p>Your Reply: {{ answer }}</p>
+    <div class="radio" *ngFor="let gender of genders">
+      <label
+        ><input
+          type="radio"
+          name="gender"
+          id=""
+          ngModel
+          [value]="gender"
+          required
+        />
+        {{ gender }}</label
+      >
+    </div>
     <button type="submit" [disabled]="!f.valid">Submit</button>
   </div>
 </form>
+<div class="" *ngIf="submitted">
+  <div class="">
+    <h3>Your Data</h3>
+    <p>Username: {{ user.username }}</p>
+    <p>Mail: {{ user.email }}</p>
+    <p>Secret Question:{{ user.secretQuestion }}</p>
+    <p>Answer:{{ user.answer }}</p>
+    <p>Gender:{{ user.gender }}</p>
+  </div>
+</div>
