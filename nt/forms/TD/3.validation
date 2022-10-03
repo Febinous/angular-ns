@@ -1,0 +1,7 @@
+ <input type="text" name="email" ngModel required email #email="ngModel" />
+  <br />
+  <span class="help-block" *ngIf="!email.valid && email.touched"
+    >Please enter a valid email</span
+  >
+
+  --#email="ngModel"

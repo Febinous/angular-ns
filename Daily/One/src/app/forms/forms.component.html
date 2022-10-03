@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+  <div ngModelGroup="data">
+    <label>First Name</label>
+    <br />
+    <input type="text" name="fname" ngModel required />
+    <br />
+    <label>Email</label>
+
+    <br />
+    <input type="text" name="email" ngModel required email #email="ngModel" />
+    <br />
+    <span class="help-block" *ngIf="!email.valid && email.touched"
+      >Please enter a valid email</span
+    >
+    <br />
+    <select [ngModel]="defaultQuestion" name="secret">
+      <option value="pet">Your First Pet?</option>
+      <option value="teacher">Your First Teacher?</option>
+    </select>
+    <div>
+      <textarea name="questionAnswer" rows="3" [(ngModel)]="answer"> </textarea>
+    </div>
+    <p>Your Reply: {{ answer }}</p>
+    <button type="submit" [disabled]="!f.valid">Submit</button>
+  </div>
+</form>

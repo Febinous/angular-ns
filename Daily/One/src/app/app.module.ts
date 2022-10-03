@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { disp } from './disp/disp.component';
 
 import { registration } from './registration.component/registration.component';
+import { FormsComponent } from './forms/forms.component';
 @NgModule({
-  declarations: [AppComponent, registration, disp],
+  declarations: [AppComponent, registration, disp, FormsComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

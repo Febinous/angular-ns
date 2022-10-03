@@ -15,3 +15,4 @@ ngOnInit(){
 -- Programmatically 
 
 <a [routerLink]="['/users', 10, 'Anaa']">Load Anna (10)</a>
+

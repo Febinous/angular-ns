@@ -1,0 +1,2 @@
+<div ngModelGroup="data"></div>
+-- name of the object -- structuring data

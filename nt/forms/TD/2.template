@@ -1,0 +1,5 @@
+<form (ngSubmit)="onSubmit()" #f=ngForm>
+
+@ViewChild('f')signupForm:NgForm;
+
+console.log(this.signupForm);

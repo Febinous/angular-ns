@@ -1,3 +1,13 @@
 -- open forms tag 
     -- on forms open ngSubmit and give a function 
 <form (ngSubmit)="onSubmit(fo)" #fo="ngForm">
+  <input type="text" name="lname" id="" ngModel required />
+-- with a submit button
+-- treated as ElementRef
+
+-- another technique
+
+  @ViewChild('f') signupForm: NgForm;
+
+  
+

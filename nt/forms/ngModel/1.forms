@@ -1,0 +1,21 @@
+
+-- telling its a control
+
+<input type="text" name="email" ngModel required email #email="ngModel" />
+  <br />
+  <span class="help-block" *ngIf="!email.valid && email.touched"
+    >Please enter a valid email</span
+  >
+
+
+-- setting a default control
+
+  <br />
+  <select [ngModel]="defaultQuestion" name="secret">
+    <option value="pet">Your First Pet?</option>
+    <option value="teacher">Your First Teacher?</option>
+  </select>
+  -- two way binding
+  <div>
+    <textarea name="questionAnswer" rows="3" [(ngModel)]="answer"> </textarea>
+  </div>
