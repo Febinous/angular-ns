@@ -1,0 +1,4 @@
+-- on app.components
+    -- signupForm:FormGroup{}
+-- Import reactiveFormsModule
+
