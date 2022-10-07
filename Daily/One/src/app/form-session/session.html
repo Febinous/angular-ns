@@ -1,0 +1,46 @@
+<div class="par">
+  <form class="cent" (ngSubmit)="onSubmit()" #f="ngForm">
+    <div class="" ngModelGroup="grp1" #grp2="ngModelGroup">
+      <div class="">
+        <label for="">Enter Name</label><br />
+        <input type="text" name="name" ngModel required #name="ngModel" />
+      </div>
+      <span *ngIf="!name.valid && name.touched">Enter Valid Name</span>
+      <br />
+      <div class="">
+        <label for="">Enter Email</label><br />
+        <input
+          type="text"
+          ngModel
+          name="email"
+          required
+          email
+          #email="ngModel"
+        />
+      </div>
+      <span *ngIf="!email.valid && email.touched">Enter Valid Email</span>
+      <br />
+      <div *ngFor="let a of gender">
+        <input
+          type="radio"
+          ngModel
+          [ngModel]="'female'"
+          name="gender"
+          [value]="a"
+        /><label>{{a}}</label>
+      </div>
+    </div>
+    <span *ngIf="!f.valid && f.touched">Enter Valid Data</span>
+    <br />
+
+    <button type="submit" [disabled]="!f.valid ">Submit</button>
+  </form>
+</div>
+<div class="par">
+  <div class="" *ngIf="subm">
+    <div *ngFor="let a of opt">
+      <input type="radio" name="ngModel" (click)="show(a)" />{{a}}
+    </div>
+    <span class="blk">{{b}}</span>
+  </div>
+</div>

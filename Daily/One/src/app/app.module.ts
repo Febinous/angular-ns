@@ -7,8 +7,9 @@ import { disp } from './disp/disp.component';
 
 import { registration } from './registration.component/registration.component';
 import { FormsComponent } from './forms/forms.component';
+import FormSession from './form-session/session';
 @NgModule({
-  declarations: [AppComponent, registration, disp, FormsComponent],
+  declarations: [AppComponent, registration, disp, FormsComponent, FormSession],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

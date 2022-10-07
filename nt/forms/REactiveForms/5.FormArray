@@ -1,0 +1,25 @@
+ 
+      hobbies: new FormArray([]),
+
+ onAddHobby() {
+    const control = new FormControl(null, Validators.required);
+    (<FormArray>this.signupForm.get("hobbies")).push(control);
+  }
+
+
+ <div class="" formArrayName="hobbies">
+
+          <h4>Your Hobbies</h4>
+          <button class="btn btn-default" type="submit" (click)="onAddHobby()">
+            Add Hobby
+          </button>
+          <div
+            class="form-group"
+            *ngFor="
+              let hobbyControl of signupForm.get('hobbies').controls;
+              let i = index
+            "
+          >
+            <input type="text" class="form-control" [formControlName]="i" />
+          </div>
+        </div>

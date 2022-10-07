@@ -1,0 +1,22 @@
+      
+       this.signupForm = new FormGroup({
+      userData: new FormGroup({
+        username: new FormControl(null, Validators.required),
+        email: new FormControl(null, [Validators.required, Validators.email]),
+      }),
+      gender: new FormControl("male"),
+    });
+  
+      
+ <div formGroupName="userData">
+
+
+
+<span
+              class="help-block"
+              *ngIf="
+                !signupForm.get('userData.email').valid &&
+                signupForm.get('userData.email').touched
+              "
+              >Please enter valid Email</span
+            >

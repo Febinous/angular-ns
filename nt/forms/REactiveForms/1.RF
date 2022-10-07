@@ -1,4 +1,18 @@
 -- on app.components
     -- signupForm:FormGroup{}
+    -- import formGroup
+     signupForm: FormGroup;
+  ngOnInit() {
+    this.signupForm = new FormGroup({
+      username: new FormControl(null),
+      email: new FormControl(null),
+      gender: new FormControl("male"),
+    });
+
 -- Import reactiveFormsModule
 
+      <form [formGroup]="signupForm">
+
+-- connecting ts vars with control
+
+            formControlName="username"
