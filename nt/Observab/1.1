@@ -1,0 +1,13 @@
+import { interval, Subscription } from "rxjs";
+
+
+
+private firstObsSubscription: Subscription;
+  ngOnInit() {
+    this.firstObsSubscription = interval(1000).subscribe((data) => {
+      console.log(data);
+    });
+  }
+  ngOnDestroy() {
+    this.firstObsSubscription.unsubscribe();
+  }

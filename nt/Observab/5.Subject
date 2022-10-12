@@ -1,0 +1,13 @@
+--subjects(eventEmitters)
+
+
+  activatedEmitter = new Subject<boolean>();
+
+ ngOnInit() {
+    this.userService.activatedEmitter.subscribe((didActivated) => {
+      this.userActivated = didActivated;
+    });
+
+ onActivate() {
+    this.userService.activatedEmitter.next(true);
+  }

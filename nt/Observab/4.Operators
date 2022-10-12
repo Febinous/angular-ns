@@ -1,0 +1,22 @@
+import { map } from "rxjs/operators";
+
+
+this.firstObsSubscription = customIntervalObservable
+      .pipe(
+        map((data: number) => {
+          return "Round:" + (data + 1);
+        })
+      )
+      .subscribe(
+        (data) => {
+          console.log(data);
+        },
+        (error) => {
+          console.log(error);
+          alert(error.message);
+        },
+        () => {
+          //completed
+          console.log("Completed!");
+        }
+      );
