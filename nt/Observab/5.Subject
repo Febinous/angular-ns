@@ -11,3 +11,5 @@
  onActivate() {
     this.userService.activatedEmitter.next(true);
   }
+  .complete();
+  .error(new Error('Error'));

@@ -1,8 +1,16 @@
--- Gives or can specify which style to give to active tab 
+-- Gives or can specify which style to give to active tab routerLinkActive="" --
+for exact not just a part of the path [routerLinkActiveOptions]="{exact:true}"
 
-routerLinkActive=""
- 
- -- for exact not just a part of the path
- [routerLinkActiveOptions]="{exact:true}"
-
-
+<li
+  role="presentation"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: true }"
+>
+  <a routerLink="/">Home</a>
+</li>
+<li role="presentation" routerLinkActive="active">
+  <a routerLink="/servers">Servers</a>
+</li>
+<li role="presentation" routerLinkActive="active">
+  <a [routerLink]="['/users']">Users</a>
+</li>
