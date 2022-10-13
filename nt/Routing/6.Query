@@ -1,0 +1,16 @@
+ <a
+        [routerLink]="['/servers', 5, 'edit']"
+        [queryParams]="{ allowEdit: '1' }"
+        fragment="loading"
+        href="#"
+        class="list-group-item"
+        *ngFor="let server of servers"
+      >
+
+
+  { path: "servers/:id/edit", component: EditServerComponent },
+
+onLoadServer(id: number) {
+    this.router.navigate(["/servers", id, "edit"], {
+      queryParams: { allowEdit: "1" },
+    });
