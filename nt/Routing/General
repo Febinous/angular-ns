@@ -1,0 +1,2 @@
+const id = +this.route.snapshot.params["id"]; -- + is used to make it to an int
+datatype

@@ -1,0 +1,12 @@
+constructor(
+    private serversService: ServersService,
+    private route: ActivatedRoute
+  ) {}
+
+  ngOnInit() {
+    const id = +this.route.snapshot.params["id"];
+    this.server = this.serversService.getServer(1);
+    this.route.params.subscribe((param: Params) => {
+      this.server = this.serversService.getServer(+param["id"]);
+    });
+    
