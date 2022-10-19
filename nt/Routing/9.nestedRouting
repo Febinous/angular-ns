@@ -9,3 +9,9 @@
 
 
   -- then add router-outlet to the server html page
+
+
+  this.router.navigate(["edit"], {
+      relativeTo: this.route,
+      queryParamsHandling: "preserve",
+    });

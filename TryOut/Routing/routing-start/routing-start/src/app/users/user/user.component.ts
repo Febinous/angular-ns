@@ -20,6 +20,8 @@ export class UserComponent implements OnInit {
     this.paramsSub = this.route.params.subscribe((data) => {
       this.user.id = data["id"];
       this.user.name = data["name"];
+
+      console.log(data["id"]);
     });
   }
   ngOnDestroy() {
