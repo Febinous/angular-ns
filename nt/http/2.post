@@ -1,0 +1,15 @@
+--no subscribe then no request
+
+
+
+
+-NEnLBq2Xm8w2I5rzUal:{content: 'asdf', title: 'sadf'}
+-NEnLC0jUcvirdZdZM1Q:{content: 'asdf', title: 'sadf'}
+-NEnLC4ZysAA93FLY169:{content: 'asdf', title: 'sadf'}
+-NEnLUvmF5lkXAqGIDtp:{content: 'asdfppp', title: 'post'}
+
+
+{"-NEnLBq2Xm8w2I5rzUal":{"content":"asdf","title":"sadf"},"-NEnLC0jUcvirdZdZM1Q":{"content":"asdf","title":"sadf"},"-NEnLC4ZysAA93FLY169":{"content":"asdf","title":"sadf"},"-NEnLUvmF5lkXAqGIDtp":{"content":"asdfppp","title":"post"}}
+
+
+get<{ [key: string]: Post }>

@@ -1,0 +1,35 @@
+ this.postsService.fetchPosts().subscribe(
+      (posts) => {
+        this.isFetching = false;
+        this.loadedPosts = posts;
+      },
+      (error) => {
+        console.log(error.message);
+        this.error = error.message;
+      }
+    );
+
+
+
+
+
+
+
+
+
+      return this.http
+      .get<{ [key: string]: Post }>(
+        "https://ng-default-default-rtdb.firebaseio.com/posts.json"
+      )
+      .pipe(
+        map((responseData) => {
+          console.log(responseData);
+          const postsArray: Post[] = [];
+          for (const key in responseData) {
+            if (responseData.hasOwnProperty(key)) {
+              postsArray.push({ ...responseData[key], id: key });
+            }
+          }
+          return postsArray;
+        })
+      );
